@@ -26,7 +26,7 @@ export function Contact() {
             .then(
                 () => {
                     console.log('SUCCESS!');
-                    alert("Your message sent successfull")
+                    alert("Your message was sent successfully.")
                     setName("")
                     setEmail("")
                     setMessage("")
@@ -42,7 +42,7 @@ export function Contact() {
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
-                    alert("Error while sending the message ")
+                    alert("Error occurred while sending the message.")
                 },
             );
     };
@@ -105,9 +105,8 @@ export function Contact() {
             <div className="flex justify-center">
                 <Button onClick={() => {
                     if (name == "" || email == "" || subject == "" || message == "") {
-                        alert("Please fill all details")
+                        alert("Please fill in all details.")
                         return;
-
                     }
                     sendEmail()
                 }} label={"Send"}></Button>
