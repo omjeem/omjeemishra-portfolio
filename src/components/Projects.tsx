@@ -37,8 +37,8 @@ export function Projects() {
             tech: "React, Node, Express, MongoDB",
             caseStudy: "This is a case study",
             src: portfolio,
-            live: "",
-            forntend: "",
+            live: "https://omjeemishra.vercel.app/",
+            forntend: "https://github.com/omjeem/omjeemishra-portfolio",
             backend: ""
         }
     ]
@@ -100,7 +100,7 @@ function ProjectDesc(props: any) {
                     {
                         props.forntend && (
                             <a href={props.forntend} target="_blank">
-                                <Button label={"Frontend Code"} />
+                                <Button label={"Frontend"} />
                             </a>
                         )
                     }
@@ -109,7 +109,7 @@ function ProjectDesc(props: any) {
                             <a href={props.backend} target="_blank">
                                 <Button onClick={()=>{
                                     console.log(props.backend)
-                                }} label={"Backend Code"} />
+                                }} label={"Backend"} />
                             </a>
                         )
                     }

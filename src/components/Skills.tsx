@@ -35,7 +35,7 @@ export function Skills() {
         </div>
 
         <div className="my-3 bg-gray-100 shadow-md rounded-lg p-4 flex flex-col items-center justify-center m-4">
-            <div className="  grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-9 gap-4">
+            <div className="  grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-9 gap-4">
                 {skills.map((item, index) => (
                     <SkillBox key={index} name={item.name} icon={item.icon} />
                 ))}
