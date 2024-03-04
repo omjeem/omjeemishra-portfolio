@@ -25,7 +25,7 @@ export function About() {
 
                 </div>
                 <div className="my-8 flex space-x-2 lg:space-x-5  items-center">
-                    <a href="https://drive.google.com/file/d/1qk_0PV0KjO6Y4XlhOyJGDHxOkKYzLeP_/view?usp=drive_link" target="_blank"  >
+                    <a href="https://drive.google.com/file/d/1yZL6H9gGTsp_dZkgl-RSFNoL73nS6S4p/view?usp=drive_link" target="_blank"  >
                         <Button label={"Resume"} />
                     </a>
 
