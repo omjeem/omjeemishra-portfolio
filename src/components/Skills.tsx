@@ -17,6 +17,8 @@ import recoil from "../icons/recoil.png";
 import docker from "../icons/docker.png";
 import css from "../icons/css.png";
 import prisma from "../icons/prisma.png";
+import cloudflare from "../icons/cloudflare.png";
+
 
 
 
@@ -86,8 +88,8 @@ const skills: Skill[] = [
         "icon": react
     },
     {
-        "name": "Docker",
-        "icon": docker
+        "name": "Cloudflare",
+        "icon": cloudflare
     },
 
     {
