@@ -14,7 +14,7 @@ import firebase from "../icons/firebase.png";
 import express from "../icons/express.png";
 import recoil from "../icons/recoil.png";
 // import nextJs from "../icons/nextJs.png";
-import docker from "../icons/docker.png";
+// import docker from "../icons/docker.png";
 import css from "../icons/css.png";
 import prisma from "../icons/prisma.png";
 import cloudflare from "../icons/cloudflare.png";
