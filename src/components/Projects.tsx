@@ -1,6 +1,7 @@
 import taskmaster from "../images/taskmaster.jpeg";
 import payTm from "../images/payTm.png";
 import portfolio from "../images/portfolio.png";
+import dnsManager from "../images/dnsManager.png";
 
 
 import { Button } from "./subComponents/Button";
@@ -8,6 +9,19 @@ import { Button } from "./subComponents/Button";
 
 export function Projects() {
     const project: Description[] = [
+        {
+            name: "DNS Master: A DNS Manager",
+            desc: `<b>DNS Master</b>, a <b>MERN</b>-based web app, facilitates the streamlined management of
+            <b>DNS records</b> for domains hosted on <b>AWS Route 53</b>. 
+             Additionally, the integration of <b>CSV and JSON</b> bulk uploads facilitates swift data import. With its robust security measures, it ensures 
+             the <b>integrity</b> and <b>confidentiality</b> of sensitive data.`,
+            tech: "React, Node, Express, MongoDB, AWS Route 53",
+            caseStudy: "This is a case study",
+            src: dnsManager,
+            live: "https://dnsmaster.vercel.app/",
+            forntend: "https://github.com/omjeem/dns-manager-frontend",
+            backend: "https://github.com/omjeem/dns-manager-backend"
+        },
         {
             name: "Taskmaster",
             desc: `<b>Taskmaster</b> is a <b>MERN</b> project in <b>TypeScript</b>, 
@@ -89,7 +103,7 @@ function ProjectDesc(props: any) {
                 <div className="font-bold text-2xl">{props.name}</div>
                 <div className="max-w-[500px] lg:max-w-[500px] overflow-wrap" dangerouslySetInnerHTML={createMarkup()}></div>
                 <div className="flex  ">
-                {
+                    {
                         props.live && (
                             <a href={props.live} target="_blank">
                                 <Button label={"Live"} />
@@ -107,7 +121,7 @@ function ProjectDesc(props: any) {
                     {
                         props.backend && (
                             <a href={props.backend} target="_blank">
-                                <Button onClick={()=>{
+                                <Button onClick={() => {
                                     console.log(props.backend)
                                 }} label={"Backend"} />
                             </a>
