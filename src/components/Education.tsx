@@ -25,7 +25,7 @@ export function Education() {
                         <span className="text-purple-700 mx-1"> Education</span>
                     </div>
                     <div className="text-center my-1">
-                        Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.
+                        Education Is Not The Learning Of Facts, But The Training Of The Mind To Think .
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@ export function Education() {
 
 
 function EducationDetail(props: EducationInfo) {
-    return <div className="p-4 bg-gray-100 lg:flex space-y-2 lg:space-x-4 items-center my-10 bg-white border border-gray-100 rounded-lg shadow hover:shadow-2xl  ">
+    return <div className="p-4  lg:flex space-y-2 lg:space-x-4 items-center my-10 bg-white border border-gray-100 rounded-lg shadow hover:shadow-2xl  ">
         <div className="flex justify-center">
             <img src={props.schoolImage} alt="gl bajaj" className="w-40 h-40 " />
         </div>
